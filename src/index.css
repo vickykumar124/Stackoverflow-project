@@ -1,0 +1,42 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss";
+
+
+/* ===== MARQUEE ===== */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__content {
+  display: flex;
+  width: fit-content;
+  animation: scroll 15s linear infinite;
+}
+
+.marquee__content span {
+  margin-right: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* KEYFRAMES */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
